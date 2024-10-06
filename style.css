@@ -1,37 +1,97 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+;
+
+* {
+  padding: 0;
+  margin: 0;
+
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(125deg, #0f4c5c, #4c1a57);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  min-height: 100vh;
 }
 
 #main-content {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 0;
+}
+
+#content {
+  width: 600px;
+  text-align: center;
+  padding: 30px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(143deg, #4c1a57, #00a8aa);
+}
+
+form {
+  font-size: 20px;
+}
+
+#create-task-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: #4c1a57;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 25, 225);
+}
+
+input {
+  flex: 1;
+  width: 500px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  height: 30px;
+  font-weight: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  color: #00a8aa;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#new-task-description::placeholder {
+  padding: 10px;
+  color: #00a8aa;
 }
 
 #list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+position: relative;
 }
